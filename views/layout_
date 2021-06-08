@@ -1,0 +1,16 @@
+html
+  head
+    link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@tailwindcss/ui@latest/dist/tailwind-ui.min.css')
+    block head
+  body
+  .navi.bg-gray-50
+    ul.text-1xl.leading-9.font-extrabold.text-blue-500
+      li
+        a(href='/home') Home
+      li
+        a(href='/logout') Logout
+      li
+        a(href='/contact') Contact
+      li
+        a(href='/') Back to previous page
+      block body

@@ -1,0 +1,44 @@
+extends layout.pug
+html
+ head
+  style.
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#e70589;
+    }
+    li {
+    float: left;
+    }
+    li a {
+    display: block;
+    color: white;
+    font-family: tahoma;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+    li a:hover:not(.active) {
+    background-color: rgb(136, 134, 252);
+    }
+    .active {
+    background-color: #ae91e4;
+    }
+    h2{
+    font-family: tahoma;
+    text-align: center;
+    }
+  script.
+    var container = document.querySelector('.navi');
+    container.addEventListener('click', function(e) {
+    if (e.target != e.currentTarget) {
+    e.preventDefault();
+    }
+    e.stopPropagation();
+    }, false);
+    .navi
+        ul
+          li(style='float:right')
+            a.active(href='#logout') Login
