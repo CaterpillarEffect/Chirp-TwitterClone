@@ -18,7 +18,7 @@ npm install express redis
 to start redis server please use this command
 nodemon app.js
 
-#Usage
+# Usage
 open your browser to localhost:3000 in order to use the application 
 
 
